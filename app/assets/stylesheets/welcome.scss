@@ -1,0 +1,50 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+.parallax{
+     /*position: absolute;*/
+     /*To support older browsers*/
+    height: 100%;
+    width: 100%;
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    position: relative;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstpic{
+   background-image: url('catGlass.jpg');
+ }
+
+.secondpic{
+   background-image: url('bookstack.jpg');
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.insidepic {
+   font-family: 'Codystar', cursive;
+    background-color: #111;
+    color: white;
+    line-height: 12vh;
+    padding: 2vw;
+    font-size: 5vh;
+    letter-spacing: 10;
+}
+
+

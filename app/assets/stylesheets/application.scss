@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ @import "bootstrap";
+
+ */
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  margin: 0 auto;
+  font-family: Lora,'Times New Roman',serif;
+  font-size: 20px;
+}
+
+
+.parallax{
+     /*position: absolute;*/
+     /*To support older browsers*/
+    height: 100%;
+    width: 100%;
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    position: relative;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstpic{
+   background-image: url('catGlass.jpg');
+ }
+
+.secondpic{
+   background-image: url('bookstack.jpg');
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.insidepic {
+   font-family: 'Codystar', cursive;
+    background-color: #111;
+    color: white;
+    line-height: 12vh;
+    padding: 2vw;
+    font-size: 5vh;
+    letter-spacing: 10;
+}
+
+
+.bkgheader{
+  background: center center no-repeat;
+  color: rgba(255, 220, 220, 0.9);
+  text-align: center;
+  background-size: cover;
+  margin-bottom: 50px;
+  background-image: url('memphispyramid.jpg');
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.row{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after,
+ .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after,
+ .container-fluid:before, .container:after, .container:before,
+  .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after,
+  .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before,
+   .modal-header:after, .modal-header:before, .nav:after, .nav:before,
+   .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after,
+   .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+  }
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+.col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1,
+.col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a{
+  text-align: center;
+}
