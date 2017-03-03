@@ -9,18 +9,15 @@ with the benefits of Rails on the back-end. This is the result a Blogger site bu
 
 
 ## Code Example
-```Code in erb/React-Rails
-  <%=react_component 'Article', {article: @article} %>
+```React-Rails
+        <%=react_component 'Article', {article: @article} %>
+        <%= link_to 'Edit', edit_article_path(@article) %> |
+        <%= link_to 'Back', articles_path %>
 
+        <%=react_component 'Comment', {comment: @article.comments} %>
 
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
-
-<%=react_component 'Comment', {comment: @article.comments} %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+        <h2>Add a comment:</h2>
+        <%= render 'comments/form' %>
   ```
 ## Build Strategy
 I approached the process by building a Ruby on Rails application and then 
