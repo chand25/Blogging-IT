@@ -3,6 +3,16 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
+
+# Include Rails helpers in the assets pipeline
+Rails.application.config.assets.configure do |env|
+  env.context_class.class_eval do
+    include ActionView::Helpers
+    include Rails.application.routes.url_helpers
+  end
+end
+
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

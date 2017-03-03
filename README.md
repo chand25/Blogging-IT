@@ -3,6 +3,9 @@
 ## Synopsis:
 The motivation behind this project was to merge the benefits of React on the front-end 
 with the benefits of Rails on the back-end. This is the result a Blogger site built with React-Rails.
+A blogger can add an article and viewers of article can add commentary to each article. There is full CRUD
+functionality for all articles. A commenter can add and delete comments posted to each article.
+ 
 
 ![Screenshot of IndexPage](./index.png "Picture of IndexPage")
 
@@ -38,6 +41,7 @@ For this project, I have used the following technologies:
 
 1. Add more styling for the erb views
 2. Convert more views to React
+3. Authorization functionality for the update and delete of comments and articles
 
 
 

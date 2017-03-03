@@ -36,6 +36,9 @@ class Comment extends React.Component {
                <p key={com.id}> {com.commenter}
                {com.body}</p>
              </div>
+
+             <%=react_component 'Comment', {comment: @article.comments} %>
+
              )
          })}
 */
