@@ -9,7 +9,7 @@ with the benefits of Rails on the back-end. This is the result a Blogger site bu
 
 
 ## Code Example
-```````````Code in erb/React-Rails
+```Code in erb/React-Rails
   <%=react_component 'Article', {article: @article} %>
 
 
@@ -21,8 +21,7 @@ with the benefits of Rails on the back-end. This is the result a Blogger site bu
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
-
-  ```````````
+  ```
 ## Build Strategy
 I approached the process by building a Ruby on Rails application and then 
 converting some of the views into React. I wanted to keep the benefits of Rails with its url helpers 
